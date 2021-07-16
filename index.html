@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kc.css">
+    <script src="kc.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="name"><a href="kc.html">Kentucky Cares</a></h1>
+        <ul class="main-menu">
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="cats.html">Cats</a></li>
+            <li><a class="active" href="adoption.html">Adoption Form</a></li>
+        </ul>
+     </header> <!--/.main-header-->
+     <div class="container">
+         <div class="form-header">
+             <h2>Adoption Form</h2>
+         </div>
+            <form class="form" id="form">
+             
+                <div class="form-control">
+                    <label>Name</label>
+                    <label for="Name"> </label>
+                    <input type="text" placeholder="J. Smith" id="name">
+                </div>
+             
+                <div class="form-control">
+                    <label>Phone Number</label>
+                    <label for="Phone Number"> </label>
+                    <input type="tel" placeholder="(502)555-5555" id="phone">
+                </div>
+                
+                <div class="form-control">
+                    <label>Email</label>
+                    <label for="Email"> </label>
+                    <input type="email" placeholder="Example@gmail.com" id="email">
+                </div>
+                <div class=check-box>
+                    <label>Select a pet:</label>
+                    
+                    <input type="checkbox" id="dog-check" name="Dog"> 
+                    <label for="Dog">Dog</label>
+
+                    <input type="checkbox" id="cat-check" name="Cat"> 
+                    <label for="Cat">Cat</label>    
+                </div>
+                <button class= form-button type="submit" onclick="validate()">Submit</button>
+            </div>
+        </form>
+    <footer class="footer">
+        <p>&copy;2021 Kentucky Cares</p>
+    </footer>
+</body>
+</html>
