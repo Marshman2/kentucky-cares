@@ -1,0 +1,173 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+   padding: 0px;
+   margin: 0px;
+   font-family: 'Della Respira', serif;
+}
+
+a {
+    color: black; 
+    text-decoration: none;
+  } 
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+} 
+
+li {
+    padding: 8px;
+
+}
+
+.main-header {
+    border-style: solid;
+    border-color: black;
+    background-color: lightcyan;
+}
+
+.name {
+    font-size: 2em;
+    margin: 0;
+}
+
+.name,
+.main-menu {
+    text-align:center;
+    display: block;
+    padding: 15px 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    
+}
+
+.footer {
+   background: black;
+   color: white;
+   padding: 3em;
+   margin-top: auto;
+   text-align: center;
+}
+
+p {
+    margin: 15px;
+}
+
+.welcome {
+    margin: 15px;
+    text-align: center;
+}
+
+.container {
+    border-color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px black;
+    width: auto;
+    margin: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-header {
+    background-color: lightslategrey;
+    border-bottom: 1px solid black;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form {
+   padding: 20px 30px;
+   text-align: center;
+}
+
+.form-control {
+    padding-bottom: 20px;
+}
+
+.form-control label {
+    display: inline-block;
+    
+}
+
+.form-control input {
+    border: 2px solid black;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}
+
+#name,
+#phone,
+#email {
+    margin: auto;
+}
+
+.check-box {
+    display: inline-block;
+    margin-bottom: 25px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.form-button {
+    background-color: coral;
+    border: 2px solid black;
+    color:white;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 769px) {
+
+    .main-header,
+    .main-menu {
+        display: flex;
+    }
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
