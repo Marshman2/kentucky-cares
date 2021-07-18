@@ -116,6 +116,10 @@ p {
     margin: auto;
 }
 
+#error {
+    color: red;
+}
+
 .check-box {
     display: inline-block;
     margin-bottom: 25px;
