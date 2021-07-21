@@ -47,7 +47,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    
 }
 
 .footer {
@@ -67,14 +66,22 @@ p {
     text-align: center;
 }
 
-.dog-bio-one .dog-bio-two{
+.dog-bio-one .dog-bio-two .cat-bio-one .cat-bio-two {
     margin: 20px;
 }
 
 #dog-picture {
     border: 3px solid black;
-    max-width: 20vh;
-    max-height: 20vh;
+    max-width: 40vh;
+    max-height: 40vh;
+    
+    margin:15px;
+}
+
+#cat-picture {
+    border: 3px solid black;
+    max-width: 40vh;
+    max-height: 40vh;
     
     margin:15px;
 }
@@ -175,11 +182,13 @@ p {
 
 
 
-@media (min-width: 320px) {
+@media (min-width: 280px) {
     
     .main-header,
     .dog-bio-one,
-    .dog-bio-two {
+    .dog-bio-two,
+    .cat-bio-one,
+    .cat-bio-two {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -193,12 +202,16 @@ p {
     .main-header,
     .main-menu,
     .dog-bio-one,
-    .dog-bio-two {
+    .dog-bio-two,
+    .cat-bio-one,
+    .cat-bio-two {
         display: flex;
     }
     .main-header,
     .dog-bio-one,
-    .dog-bio-two {
+    .dog-bio-two,
+    .cat-bio-one,
+    .cat-bio-two {
         flex-direction: column;
         align-items: center;
     }
@@ -213,7 +226,8 @@ p {
     }
 }
 @media (min-width: 1025px) {
-    #dog-primary {
+    #dog-primary,
+    #cat-primary {
        display:flex;
        flex-direction: row;
        justify-content: space-evenly;
