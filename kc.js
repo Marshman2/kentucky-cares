@@ -13,3 +13,15 @@ form.addEventListener("submit" , (e) => {
         errorElement.innerText = messages.join(", ")
     }
 })
+
+function completeAndRedirect()
+{
+    var r = confirm("Is all of your contact information correct? If so, click ok to continue.");
+    if (r == true) {
+        document.getElementById("form").action = "confirmation.html";
+        document.getElementById("form").submit();
+    }
+
+    }
+
+ 

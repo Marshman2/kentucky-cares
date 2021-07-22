@@ -49,24 +49,31 @@ body {
     margin: 0;
 }
 
-.footer {
-   background: black;
-   color: white;
-   padding: 3em;
-   margin-top: auto;
-   text-align: center;
-}
 
 p {
     margin: 15px;
 }
 
-.welcome {
+.footer {
+   background: black;
+   color: white;
+   padding: 3em;
+   margin-bottom:0px;
+   margin-top: auto;
+   text-align: center;
+}
+
+
+.welcome,
+.confirmation-page {
     margin: 15px;
     text-align: center;
 }
 
-.dog-bio-one .dog-bio-two .cat-bio-one .cat-bio-two {
+.dog-bio-one,
+.dog-bio-two,
+.cat-bio-one, 
+.cat-bio-two {
     margin: 20px;
 }
 
@@ -85,8 +92,6 @@ p {
     
     margin:15px;
 }
-
-
 
 .welcome {
     margin: 15px;
@@ -162,6 +167,8 @@ p {
     width: 100%;
     margin-top: 10px;
 }
+
+
 
 
 
