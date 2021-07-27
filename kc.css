@@ -71,6 +71,13 @@ p {
 
 /*--- Dog and cat pages ---*/
 
+#dog-primary ul li:nth-child(odd), /*--- ":nth-child declaration---*/
+#cat-primary ul li:nth-child(odd) {
+        background: lightcyan;
+}
+
+
+
 .dog-bio-one,
 .dog-bio-two,
 .cat-bio-one, 
