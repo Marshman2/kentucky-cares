@@ -14,14 +14,19 @@ form.addEventListener("submit" , (e) => {
     }
 })
 
-function completeAndRedirect()
-{
-    var r = confirm("Is all of your contact information correct? If so, click ok to continue.");
-    if (r == true) {
-        document.getElementById("form").action = "confirmation.html";
-        document.getElementById("form").submit();
-    }
+var alert = document.querySelector("email");
 
+alert.onclick = function () {
+    let message =("Did you enter the correct email?");
+    alert('You suggested ' + question + '! Check back for menu updates soon!');
+    if (question === null|| question === '') {
+        alert('Let us know if you think of something!');
     }
+}
+
+function display()
+{
+alert("email");
+}
 
  
