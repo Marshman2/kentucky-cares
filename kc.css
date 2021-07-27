@@ -1,3 +1,6 @@
+
+/*--- Box-sizing and font for website ---*/
+
 * {
     box-sizing:border-box;
 }
@@ -7,6 +10,9 @@ body {
    margin: 0px;
    font-family: 'Della Respira', serif;
 }
+
+
+/*--- Navigation links, header, and page content styles ---*/
 
 a {
     color: black; 
@@ -57,20 +63,13 @@ p {
     margin: 15px;
 }
 
-.footer {
-   background: black;
-   color: white;
-   padding: 3em;
-   margin-bottom:0px;
-   margin-top: auto;
-   text-align: center;
-}
-
-
 .welcome {
     margin: 15px;
     text-align: center;
 }
+
+
+/*--- Dog and cat pages ---*/
 
 .dog-bio-one,
 .dog-bio-two,
@@ -87,6 +86,8 @@ p {
     max-height: 40vh;
     margin:15px;
 }
+
+/*--- Adoption form ---*/
 
 .container {
     border-color: black;
@@ -150,25 +151,24 @@ p {
 }
 
 
+/*--- Footer at bottom of website ---*/
+
+.footer {
+    background: black;
+    color: white;
+    padding: 3em;
+    margin-bottom:0px;
+    margin-top: auto;
+    text-align: center;
+ }
+ 
 
 
 
+/*--- Media queries ---*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*--- Queries for mobile that turns content into columns from rows ---*/
 
 @media (min-width: 0px) {
     
@@ -200,6 +200,9 @@ p {
     }
 
 }
+
+
+/*--- Queries for desktop that turns content into rows from columns ---*/
 
 @media (min-width: 1025px) {
     .main-header,
