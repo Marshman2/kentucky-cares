@@ -5,11 +5,13 @@ function getName() {
 
 function display() {
     text = getName();
+    if (getName() === null|| getName() === "") {
+        window.alert("Please enter your name");
+        display.preventDefault();
+        return false;
+    }
+    if (getName() !== null|| getName() !== "") {
     window.alert("Thank you for your application, " + text + "!");
-    document.getElementById("form").submit();
-} 
-
-
-
+    document.getElementById("form").submit()}};
 
 
