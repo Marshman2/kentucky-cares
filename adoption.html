@@ -7,45 +7,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="kc.css">
     <script src="kc.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--website-font-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--website-font-->
+<link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet"> <!--website-font-->
 </head>
 <body>
-    <header class="main-header"> <!--/.main-header-->
+    <header class="main-header"> <!--main-header-->
         <h1 class="name"><a href="index.html">Kentucky Cares</a></h1>
         <ul class="main-menu">
             <li><a href="dogs.html">Dogs</a></li>
             <li><a href="cats.html">Cats</a></li>
             <li><a class="active" href="adoption.html">Adoption Form</a></li>
         </ul>
-     </header> <!--/.main-header-->
-     <div class="container">
-         <div class="form-header">
-             <h2>Adoption Form</h2>
-         </div>
+     </header> <!--/main-header-->
+     
+        <div class="container"> <!--adoption-form-container-->
+            
+            <div class="form-header">  <!--adoption-form-header-->
+                <h2>Adoption Form</h2>
+            </div> <!--/adoption-form-header-->
             
             <form class="form" id="form">
-                <div class="form-control">
+                
+                <div class="form-control"> <!--adoption-form-name-->
                     <label>Name</label>
                     <label for="Name"> </label>
                     <input type="text" placeholder="J. Smith" id="name">
-                </div>
+                </div> <!--/adoption-form-name-->
              
-                <div class="form-control">
-                    <label>Phone Number</label>
+                <div class="form-control"> <!--adoption-form-phone-->
+                    <label>Phone Number</label> 
                     <label for="Phone Number"> </label>
                     <input type="tel" placeholder="(502) 555-5555" id="phone">
-                </div>
+                </div> <!--/adoption-form-phone-->
                 
-                <div class="form-control">
+                <div class="form-control"> <!--adoption-form-email-->
                     <label>Email</label>
                     <label for="Email"> </label>
                     <input type="email" placeholder="Example@gmail.com" id="email">
-                <div id="error">
-                </div>   
-                </div>
-                <div class=check-box>
+                </div>  <!--/adoption-form-email-->
+
+                <div class=check-box>  <!--adoption-form-check-box-->
                     <label>Select a pet:</label>
                     
                     <input type="checkbox" id="dog-check" name="Dog"> 
@@ -53,13 +55,17 @@
 
                     <input type="checkbox" id="cat-check" name="Cat"> 
                     <label for="Cat">Cat</label>    
-                </div>
-                <button class= "form-button" type="submit">Submit </button> 
-            </div>
-        </form>
-        
-        <footer class ="footer">
+                </div> <!--/adoption-form-check-box-->
+                
+                <button class= "form-button" type="submit" onclick="display()">Submit </button> <!--adoption-form-submit-button-->
+           
+            </form>
+
+        </div> <!--/adoption-form-container-->
+
+        <footer class ="footer"> <!--footer-->
         <p>&copy;2021 Kentucky Cares</p>
-    </footer>
+    </footer> <!--/footer-->
+
 </body>
 </html>

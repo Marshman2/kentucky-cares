@@ -49,6 +49,9 @@ body {
     margin: 0;
 }
 
+h3 {
+    text-align: center;
+}
 
 p {
     margin: 15px;
@@ -64,8 +67,7 @@ p {
 }
 
 
-.welcome,
-.confirmation-page {
+.welcome {
     margin: 15px;
     text-align: center;
 }
@@ -78,28 +80,12 @@ p {
     text-align: center;
 }
 
-h3 {
-    text-align: center;
-}
-
-
-#dog-picture {
-    border: 3px solid black;
-    max-width: 40vh;
-    max-height: 40vh;
-    margin:15px;
-}
-
+#dog-picture,
 #cat-picture {
     border: 3px solid black;
     max-width: 40vh;
     max-height: 40vh;
     margin:15px;
-}
-
-.welcome {
-    margin: 15px;
-    text-align: center;
 }
 
 .container {
@@ -117,10 +103,6 @@ h3 {
     border-bottom: 1px solid black;
     padding: 20px 40px;
     text-align: center;
-}
-
-.header h2 {
-    margin: 0;
 }
 
 .form {
@@ -148,10 +130,6 @@ h3 {
 #phone,
 #email {
     margin: auto;
-}
-
-#error {
-    color: red;
 }
 
 .check-box {
