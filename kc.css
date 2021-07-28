@@ -174,21 +174,7 @@ p {
 /*--- Media queries ---*/
 
 
-/*--- Queries for mobile that turns content into columns from rows ---*/
-
-@media (min-width: 0px) {
-    
-    .main-header,
-    .main-menu,
-    #dog-primary,
-    #cat-primary {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-}
-
+/*--- Query that turns content into rows and columns ---*/
 
 @media (min-width: 769px) {
 
@@ -208,7 +194,7 @@ p {
 }
 
 
-/*--- Queries for desktop that turns content into rows from columns ---*/
+/*--- Queries for desktop that turns content into rows and columns ---*/
 
 @media (min-width: 1025px) {
     .main-header,
@@ -220,7 +206,7 @@ p {
 @media (min-width: 1025px) {
     #dog-primary,
     #cat-primary {
-       display:flex;
+       display:inherit;
        flex-direction: row;
        justify-content: space-evenly;
        align-items: center;
